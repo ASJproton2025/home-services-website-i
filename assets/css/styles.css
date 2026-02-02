@@ -1,0 +1,31 @@
+/* Light theme colors */
+:root
+{
+    --background: #f9fafb;
+    --primary-text: #111827;
+    --muted-text: #6b7280;
+    --border: #e5e7eb;
+    --hover: #1d4ed8;
+    --header: #2563eb;
+    --footer: #111827;
+    --primary-button: #2563eb;
+    --secondary-button: #e5e7eb;
+    --card-background: #fff;
+    --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Dark theme colors */
+[data-theme="dark"]
+{
+    --background: #0f172a;
+    --primary-text: #e5e7eb;
+    --muted-text: #94a3b8;
+    --border: #1e293b;
+    --hover: #3b82f6;
+    --header: #020617;
+    --footer: #020617;
+    --primary-button: #3b82f6;
+    --secondary-button: #1e293b;
+    --card-background: #020617;
+    --shadow: rgba(0, 0, 0, 0.08);
+}
