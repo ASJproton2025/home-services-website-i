@@ -7,7 +7,7 @@
     --border: #e5e7eb;
     --hover: #1d4ed8;
     --header: #2563eb;
-    --footer: #111827;
+    --footer: #f9fafb;
     --primary-button: #2563eb;
     --secondary-button: #e5e7eb;
     --card-background: #fff;
@@ -28,4 +28,149 @@
     --secondary-button: #1e293b;
     --card-background: #020617;
     --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Common colors */
+body
+{
+    background-color: var(--background);
+    color: var(--primary-text);
+}
+a
+{
+    color: var(--hover);
+}
+button.primary
+{
+    background-color: var(--primary-button);
+    color: #fff;
+}
+button.secondary
+{
+    background-color: var(--secondary-button);
+    color: var(--primary-text);
+}
+.card
+{
+    background-color: var(--card-background);
+    box-shadow: 0 4px 6px var(--shadow);
+}
+header
+{
+    background-color: var(--header);
+}
+footer
+{
+    background-color: var(--footer);
+}
+
+/* Header section */
+header
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Header logo */
+header .logo
+{
+    background: url('../images/logo.png') center/cover no-repeat;
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+
+/* Header logo text */
+header .logo .logo-text
+{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.08);
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header .logo .logo-text h1
+{
+    color: var(--primary-text);
+    font-size: 2.5rem;
+    margin: 0;
+}
+header .logo .logo-text p
+{
+    color: var(--muted-text);
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+}
+
+/* Navigation bar */
+header nav
+{
+    background-color: var(--header);
+    border-bottom: 2px solid var(--border);
+    height: 80px;
+    font-size: larger;
+}
+
+/* Navigation bar list */
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 16px 0;
+}
+
+/* Navigation links */
+header nav a
+{
+    text-decoration: none;
+    color: var(--primary-text);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Navigation links hover and focus states */
+header nav a:hover, header nav a:focus
+{
+    color: var(--hover);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Contact us button in navigation bar */
+header nav button.primary
+{
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Main content area */
+
+
+/* Theme toggle button */
+img#theme-icon
+{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+/* Footer section */
+footer
+{
+    padding: 0 10px;
+    border-top: 1px solid var(--border);
 }
